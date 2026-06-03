@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>Super Admin Panel</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet">
+
+<link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<link rel="stylesheet"
+      th:href="@{/assets/CSS/superadmin.css}">
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-dark bg-dark">
+
+<div class="container-fluid">
+
+    <span class="navbar-brand fs-4">
+
+        <i class="fa-solid fa-crown text-warning"></i>
+
+        SUPER ADMIN PANEL
+
+    </span>
+
+    <div>
+
+        <a th:href="@{/dashboard}"
+           class="btn btn-info me-2">
+
+            <i class="fa-solid fa-chart-line"></i>
+
+            Admin Dashboard
+
+        </a>
+
+        <a th:href="@{/users}"
+           class="btn btn-primary me-2">
+
+            <i class="fa-solid fa-users"></i>
+
+            Users
+
+        </a>
+
+        <a th:href="@{/rooms}"
+           class="btn btn-success me-2">
+
+            <i class="fa-solid fa-bed"></i>
+
+            Rooms
+
+        </a>
+
+        <a th:href="@{/mybookings}"
+           class="btn btn-warning me-2">
+
+            <i class="fa-solid fa-calendar-check"></i>
+
+            Bookings
+
+        </a>
+
+        <a th:href="@{/logout}"
+           class="btn btn-danger">
+
+            <i class="fa-solid fa-right-from-bracket"></i>
+
+            Logout
+
+        </a>
+
+    </div>
+
+</div>
+
+</nav>
+
+<div class="container mt-5">
+
+<div class="row">
+
+    <div class="col-md-4 mb-4">
+
+        <div class="card-box bg1">
+
+            <h5>
+
+                <i class="fa-solid fa-users"></i>
+
+                Total Users
+
+            </h5>
+
+            <h1 th:text="${users}">
+                0
+            </h1>
+
+        </div>
+
+    </div>
+
+    <div class="col-md-4 mb-4">
+
+        <div class="card-box bg2">
+
+            <h5>
+
+                <i class="fa-solid fa-bed"></i>
+
+                Total Rooms
+
+            </h5>
+
+            <h1 th:text="${rooms}">
+                0
+            </h1>
+
+        </div>
+
+    </div>
+
+    <div class="col-md-4 mb-4">
+
+        <div class="card-box bg3">
+
+            <h5>
+
+                <i class="fa-solid fa-calendar-check"></i>
+
+                Total Bookings
+
+            </h5>
+
+            <h1 th:text="${bookings}">
+                0
+            </h1>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="card p-4 mt-4">
+
+    <h3 class="mb-4">
+
+        <i class="fa-solid fa-shield-halved text-danger"></i>
+
+        Super Admin Control
+
+    </h3>
+
+    <div class="d-grid gap-3">
+
+        <a th:href="@{/users}"
+           class="btn btn-dark control-btn">
+
+            <i class="fa-solid fa-user-gear"></i>
+
+            Manage Users
+
+        </a>
+
+        <a th:href="@{/reports}"
+           class="btn btn-primary control-btn">
+
+            <i class="fa-solid fa-chart-column"></i>
+
+            Reports
+
+        </a>
+
+        <a th:href="@{/payments}"
+           class="btn btn-success control-btn">
+
+            <i class="fa-solid fa-money-bill-wave"></i>
+
+            Payments
+
+        </a>
+
+        <a th:href="@{/profile}"
+           class="btn btn-secondary control-btn">
+
+            <i class="fa-solid fa-user"></i>
+
+            Profile
+
+        </a>
+
+    </div>
+
+</div>
+
+</div>
+
+</body>
+</html>

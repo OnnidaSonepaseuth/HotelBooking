@@ -1,0 +1,52 @@
+body{
+    background:#f4f7fc;
+    font-family:Arial,sans-serif;
+}
+
+/* NAVBAR */
+.navbar{
+    padding:15px 20px;
+}
+
+/* CARD */
+.card-box{
+    max-width:600px;
+    margin:auto;
+    margin-top:60px;
+    padding:35px;
+    border-radius:20px;
+    background:white;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+    animation:fade 0.4s ease;
+}
+
+/* ANIMATION */
+@keyframes fade{
+
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+/* INPUT */
+.form-control{
+    border-radius:12px;
+    padding:12px;
+}
+
+/* BUTTON */
+.btn{
+    border-radius:12px;
+}
+
+/* TITLE */
+h2{
+    font-weight:bold;
+}

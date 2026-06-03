@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>Add Review</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet">
+
+<link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body class="bg-light">
+
+<nav class="navbar navbar-dark bg-dark">
+
+    <div class="container-fluid">
+
+        <span class="navbar-brand">
+
+            <i class="fa-solid fa-star"></i>
+
+            Add Review
+
+        </span>
+
+        <div>
+
+            <a th:href="@{/reviews}"
+               class="btn btn-primary me-2">
+
+                <i class="fa-solid fa-list"></i>
+
+                Reviews
+
+            </a>
+
+            <a th:href="@{/logout}"
+               class="btn btn-danger">
+
+                Logout
+
+            </a>
+
+        </div>
+
+    </div>
+
+</nav>
+
+<div class="container mt-5">
+
+    <div class="card shadow p-4">
+
+        <h2 class="mb-4 text-center">
+
+            <i class="fa-solid fa-pen"></i>
+
+            Add New Review
+
+        </h2>
+
+        <form th:action="@{/add-review}"
+              method="post">
+
+            <div class="mb-3">
+
+                <label class="form-label">
+
+                    Customer Name
+
+                </label>
+
+                <input type="text"
+                       name="customer_name"
+                       class="form-control"
+                       required>
+
+            </div>
+
+            <div class="mb-3">
+
+                <label class="form-label">
+
+                    Review
+
+                </label>
+
+                <textarea name="review_text"
+                          class="form-control"
+                          rows="4"
+                          required></textarea>
+
+            </div>
+
+            <div class="mb-4">
+
+                <label class="form-label">
+
+                    Rating
+
+                </label>
+
+                <select name="rating"
+                        class="form-select"
+                        required>
+
+                    <option value="5">⭐⭐⭐⭐⭐ (5)</option>
+                    <option value="4">⭐⭐⭐⭐ (4)</option>
+                    <option value="3">⭐⭐⭐ (3)</option>
+                    <option value="2">⭐⭐ (2)</option>
+                    <option value="1">⭐ (1)</option>
+
+                </select>
+
+            </div>
+
+            <button type="submit"
+                    class="btn btn-success w-100">
+
+                <i class="fa-solid fa-floppy-disk"></i>
+
+                Save Review
+
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+</body>
+
+</html>

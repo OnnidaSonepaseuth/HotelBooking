@@ -1,0 +1,240 @@
+body{
+
+
+margin:0;
+
+min-height:100vh;
+
+font-family:'Segoe UI',sans-serif;
+
+background:
+linear-gradient(
+    rgba(11,26,42,0.92),
+    rgba(11,26,42,0.92)
+),
+url("../img/home/homeBanner.png");
+
+background-size:cover;
+background-position:center;
+
+color:white;
+
+
+}
+
+.card-box{
+
+background:
+rgba(255,255,255,0.08);
+
+backdrop-filter:blur(12px);
+
+border-radius:25px;
+
+padding:35px;
+
+box-shadow:
+0 15px 35px rgba(0,0,0,0.25);
+
+border:1px solid rgba(255,255,255,0.08);
+
+}
+
+.top-box{
+
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+margin-bottom:25px;
+
+
+}
+
+.page-title{
+
+
+color:#d4a762;
+
+font-size:42px;
+
+font-weight:800;
+
+
+}
+
+.page-title i{
+
+
+color:#facc15;
+
+
+}
+
+.modern-table{
+
+
+color:white;
+
+border-radius:18px;
+
+overflow:hidden;
+
+background:
+rgba(255,255,255,0.06);
+
+
+}
+
+.modern-table thead{
+
+background:
+linear-gradient(
+    135deg,
+    #d4a762,
+    #be904d
+);
+
+}
+
+.modern-table th{
+
+color:white;
+
+border:none;
+
+padding:18px;
+
+
+}
+
+.modern-table td{
+
+padding:18px;
+
+vertical-align:middle;
+
+border-color:
+rgba(255,255,255,0.08);
+
+}
+
+.modern-table tbody tr{
+
+transition:0.3s;
+
+}
+
+.modern-table tbody tr:hover{
+
+
+background:
+rgba(255,255,255,0.08);
+
+transform:scale(1.01);
+
+
+}
+
+.username-cell{
+
+
+font-weight:700;
+
+
+}
+
+.btn-primary{
+
+
+background:#2563eb;
+border:none;
+
+
+}
+
+.btn-danger{
+
+
+background:#dc2626;
+border:none;
+
+
+}
+
+.btn:hover{
+
+
+transform:translateY(-2px);
+
+
+}
+
+.text-warning{
+
+
+color:#facc15 !important;
+
+
+}
+
+.fade-in{
+
+
+animation:fade .5s ease;
+
+
+}
+
+@keyframes fade{
+from{
+
+    opacity:0;
+    transform:translateY(15px);
+}
+
+to{
+
+    opacity:1;
+    transform:translateY(0);
+}
+
+}
+
+::-webkit-scrollbar{
+
+width:8px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+background:#d4a762;
+
+border-radius:10px;
+
+}
+
+@media(max-width:768px){
+
+.top-box{
+
+    flex-direction:column;
+
+    gap:15px;
+}
+
+.page-title{
+
+    font-size:30px;
+}
+
+.card-box{
+
+    padding:20px;
+}
+
+}

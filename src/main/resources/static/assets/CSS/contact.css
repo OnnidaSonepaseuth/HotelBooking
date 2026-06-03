@@ -1,0 +1,278 @@
+/* ================= BODY ================= */
+
+body{
+
+    margin:0;
+    min-height:100vh;
+
+    font-family:'Segoe UI',sans-serif;
+
+    background:
+    linear-gradient(
+        rgba(11,26,42,0.95),
+        rgba(11,26,42,0.95)
+    ),
+    url("../img/home/homeBanner.png");
+
+    background-size:cover;
+    background-position:center;
+
+    color:white;
+}
+
+
+/* ================= PAGE TITLE ================= */
+
+h2{
+
+    font-size:42px;
+    font-weight:800;
+
+    color:#d4a762;
+
+    margin-bottom:30px;
+
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+
+/* ================= CARD ================= */
+
+.container{
+
+    margin-top:40px;
+}
+
+.table{
+
+    background:rgba(255,255,255,0.08);
+
+    backdrop-filter:blur(15px);
+
+    border-radius:25px;
+
+    overflow:hidden;
+
+    box-shadow:
+    0 15px 35px rgba(0,0,0,0.35);
+
+    border:1px solid rgba(255,255,255,0.08);
+}
+
+
+/* ================= TABLE HEADER ================= */
+
+.table thead{
+
+    background:
+    linear-gradient(
+        135deg,
+        #d4a762,
+        #be904d
+    );
+}
+
+.table th{
+
+    background:
+    linear-gradient(
+        135deg,
+        #d4a762,
+        #be904d
+    ) !important;
+
+    color:white;
+
+    border:none;
+
+    padding:18px;
+
+    font-size:15px;
+
+    font-weight:700;
+
+    text-transform:uppercase;
+
+    letter-spacing:0.5px;
+}
+
+
+/* ================= TABLE BODY ================= */
+
+.table td{
+
+    padding:18px;
+
+    vertical-align:middle;
+
+    border-color:
+    rgba(255,255,255,0.08);
+
+    color:dark;
+}
+
+.table tbody tr{
+
+    transition:0.3s;
+}
+
+.table tbody tr:hover{
+
+    background:
+    rgba(255,255,255,0.08);
+
+    transform:scale(1.01);
+}
+
+
+/* ================= MESSAGE COLUMN ================= */
+
+td:nth-child(5){
+
+    max-width:350px;
+
+    white-space:normal;
+
+    word-break:break-word;
+}
+
+
+/* ================= DATE ================= */
+
+td:last-child{
+
+    color:#d4a762;
+
+    font-weight:600;
+}
+
+
+/* ================= SCROLL ================= */
+
+::-webkit-scrollbar{
+
+    width:8px;
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#d4a762;
+
+    border-radius:10px;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:768px){
+
+    h2{
+
+        font-size:30px;
+    }
+
+    .table{
+
+        font-size:13px;
+    }
+}
+
+
+
+
+/* ===== TOP BAR ===== */
+
+.top-bar{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin-bottom:25px;
+}
+
+/* DASHBOARD */
+
+.back-btn{
+
+    text-decoration:none;
+
+    color:white;
+
+    background:
+    linear-gradient(
+        135deg,
+        #d4a762,
+        #be904d
+    );
+
+    padding:12px 20px;
+
+    border-radius:12px;
+
+    font-weight:700;
+
+    transition:0.3s;
+}
+
+.back-btn:hover{
+
+    color:white;
+
+    transform:translateY(-2px);
+}
+
+/* LOGOUT */
+
+.logout-btn{
+
+    text-decoration:none;
+
+    color:white;
+
+    background:
+    linear-gradient(
+        135deg,
+        #dc2626,
+        #991b1b
+    );
+
+    padding:12px 20px;
+
+    border-radius:12px;
+
+    font-weight:700;
+
+    transition:0.3s;
+}
+
+.logout-btn:hover{
+
+    color:white;
+
+    transform:translateY(-2px);
+}
+.text-warning{
+    color:#facc15 !important;
+}
+
+.page-title i{
+    color:#facc15;
+}
+
+.btn-primary{
+    background:#2563eb;
+    border:none;
+}
+
+.btn-danger{
+    background:#dc2626;
+    border:none;
+}
+
+.btn-primary:hover,
+.btn-danger:hover{
+    transform:translateY(-2px);
+}

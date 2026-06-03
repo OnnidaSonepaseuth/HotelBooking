@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+
+<meta charset="UTF-8">
+
+<title>Add User</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<link rel="stylesheet"
+th:href="@{/assets/CSS/addUser.css}">
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-dark bg-dark">
+
+    <div class="container-fluid">
+
+        <span class="navbar-brand fw-bold">
+
+            <i class="fa fa-user-plus"></i>
+
+            Add User
+
+        </span>
+
+        <div>
+
+            <a th:href="@{/users}"
+               class="btn btn-secondary me-2">
+
+                <i class="fa fa-arrow-left"></i>
+
+                Back
+
+            </a>
+
+            <a th:href="@{/logout}"
+               class="btn btn-danger">
+
+                <i class="fa fa-sign-out-alt"></i>
+
+                Logout
+
+            </a>
+
+        </div>
+
+    </div>
+
+</nav>
+
+<div class="container fade-in">
+
+    <div class="add-card">
+
+        <div class="text-center mb-4">
+
+            <h2>
+
+                <i class="fa fa-user-plus"></i>
+
+                Create User
+
+            </h2>
+
+            <p class="text-muted">
+
+                Add new admin or user account
+
+            </p>
+
+        </div>
+
+        <form th:action="@{/register}" method="post">
+
+            <div class="mb-3">
+
+                <label class="form-label">
+
+                    Username
+
+                </label>
+
+                <input type="text"
+                       name="username"
+                       class="form-control"
+                       required>
+
+            </div>
+
+            <div class="mb-3">
+
+                <label class="form-label">
+
+                    Password
+
+                </label>
+
+                <input type="password"
+                       name="password"
+                       class="form-control"
+                       required>
+
+            </div>
+
+            <div class="mb-4">
+
+                <label class="form-label">
+
+                    Role
+
+                </label>
+
+                <select name="role"
+                        class="form-select">
+
+                    <option value="user">
+                        USER
+                    </option>
+
+                    <option th:if="${session.role == 'superadmin'}"
+                            value="admin">
+                        ADMIN
+                    </option>
+
+                </select>
+
+            </div>
+
+            <button class="btn btn-success w-100 save-btn">
+
+                <i class="fa fa-floppy-disk"></i>
+
+                Add User
+
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+</body>
+</html>

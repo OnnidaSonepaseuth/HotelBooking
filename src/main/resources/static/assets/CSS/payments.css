@@ -1,0 +1,379 @@
+/* ===== BODY ===== */
+
+body {
+
+    margin: 0;
+
+    min-height: 100vh;
+
+    font-family: 'Segoe UI', sans-serif;
+
+    background:
+    linear-gradient(
+        rgba(11,26,42,0.9),
+        rgba(11,26,42,0.9)
+    ),
+    url("../img/home/homeBanner.png");
+
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+}
+
+/* ===== NAVBAR ===== */
+
+.navbar {
+
+    padding: 16px 28px;
+
+    background:
+    rgba(11,26,42,0.92) !important;
+
+    backdrop-filter: blur(10px);
+
+    box-shadow:
+    0 5px 20px rgba(0,0,0,0.25);
+}
+
+.navbar-brand {
+
+    font-size: 30px;
+
+    font-weight: 800;
+
+    color: #d4a762 !important;
+
+    letter-spacing: 1px;
+}
+
+/* ===== PAYMENT CARD ===== */
+
+.card-box {
+
+    border-radius: 22px;
+
+    padding: 28px;
+
+    color: white;
+
+    overflow: hidden;
+
+    position: relative;
+
+    background:
+    rgba(255,255,255,0.08);
+
+    backdrop-filter: blur(10px);
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,0.25);
+
+    transition: 0.35s;
+}
+
+.card-box:hover {
+
+    transform:
+    translateY(-6px);
+
+    box-shadow:
+    0 18px 40px rgba(0,0,0,0.35);
+}
+
+/* ===== PAYMENT COLORS ===== */
+
+.bg-primary {
+
+    background:
+    linear-gradient(
+        135deg,
+        #d4a762,
+        #be904d
+    ) !important;
+}
+
+.bg-success {
+
+    background:
+    linear-gradient(
+        135deg,
+        #1f8f6a,
+        #146c4f
+    ) !important;
+}
+
+.bg-danger {
+
+    background:
+    linear-gradient(
+        135deg,
+        #dc2626,
+        #991b1b
+    ) !important;
+}
+
+.bg-dark {
+
+    background:
+    linear-gradient(
+        135deg,
+        #16202d,
+        #0b1a2a
+    ) !important;
+}
+
+/* ===== KPI TEXT ===== */
+
+.card-box h5 {
+
+    font-size: 20px;
+
+    font-weight: 600;
+
+    margin-bottom: 12px;
+}
+
+.card-box h2 {
+
+    font-size: 42px;
+
+    font-weight: 800;
+}
+
+/* ===== TABLE CARD ===== */
+
+.table-card {
+
+    margin-top: 30px;
+
+    border-radius: 22px;
+
+    overflow: hidden;
+
+    background:
+    rgba(255,255,255,0.08);
+
+    backdrop-filter: blur(10px);
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* ===== TABLE ===== */
+
+.table {
+
+    color: white;
+
+    margin-bottom: 0;
+
+    background: transparent;
+}
+
+.table thead {
+
+    background:
+    rgba(212,167,98,0.18);
+}
+
+.table th {
+
+    border: none;
+
+    padding: 18px;
+
+    font-weight: 700;
+}
+
+.table td {
+
+    border-color:
+    rgba(255,255,255,0.08);
+
+    padding: 18px;
+
+    vertical-align: middle;
+}
+
+.table tbody tr {
+
+    transition: 0.3s;
+}
+
+.table tbody tr:hover {
+
+    background:
+    rgba(255,255,255,0.08);
+}
+
+/* ===== STATUS BADGE ===== */
+
+.status-paid {
+
+    background:
+    linear-gradient(
+        135deg,
+        #16a34a,
+        #15803d
+    );
+
+    color: white;
+
+    padding: 7px 14px;
+
+    border-radius: 30px;
+
+    font-size: 12px;
+
+    font-weight: 700;
+}
+
+.status-pending {
+
+    background:
+    linear-gradient(
+        135deg,
+        #f59e0b,
+        #d97706
+    );
+
+    color: white;
+
+    padding: 7px 14px;
+
+    border-radius: 30px;
+
+    font-size: 12px;
+
+    font-weight: 700;
+}
+
+.status-failed {
+
+    background:
+    linear-gradient(
+        135deg,
+        #dc2626,
+        #991b1b
+    );
+
+    color: white;
+
+    padding: 7px 14px;
+
+    border-radius: 30px;
+
+    font-size: 12px;
+
+    font-weight: 700;
+}
+
+/* ===== BUTTON ===== */
+
+.btn {
+
+    border-radius: 12px;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.btn:hover {
+
+    transform: translateY(-2px);
+}
+
+/* ===== GOLD BUTTON ===== */
+
+.btn-gold {
+
+    background:
+    linear-gradient(
+        135deg,
+        #d4a762,
+        #be904d
+    );
+
+    color: white;
+
+    border: none;
+}
+
+.btn-gold:hover {
+
+    box-shadow:
+    0 10px 20px rgba(212,167,98,0.35);
+
+    color: white;
+}
+
+/* ===== TITLES ===== */
+
+h1,h2,h3,h4,h5 {
+
+    color: white;
+
+    font-weight: 700;
+}
+
+/* ===== SUBTEXT ===== */
+
+.text-muted {
+
+    color:
+    rgba(255,255,255,0.75) !important;
+}
+
+/* ===== ANIMATION ===== */
+
+.fade-in {
+
+    animation: fadeIn 0.6s ease;
+}
+
+@keyframes fadeIn {
+
+    from {
+
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===== SCROLLBAR ===== */
+
+::-webkit-scrollbar {
+
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+
+    background: #d4a762;
+
+    border-radius: 10px;
+}
+
+/* ===== MOBILE ===== */
+
+@media(max-width:768px){
+
+    .card-box {
+
+        margin-bottom: 20px;
+    }
+
+    .card-box h2 {
+
+        font-size: 32px;
+    }
+
+}

@@ -1,0 +1,564 @@
+/* ===== BODY ===== */
+
+body{
+
+    margin:0;
+
+    min-height:100vh;
+
+    font-family:'Segoe UI',sans-serif;
+
+    background:
+    linear-gradient(
+        rgba(11,26,42,0.92),
+        rgba(11,26,42,0.92)
+    ),
+    url("../img/home/homeBanner.png");
+
+    background-size:cover;
+    background-position:center;
+
+    color:white;
+}
+
+/* ===== SIDEBAR ===== */
+
+.sidebar{
+
+    width:260px;
+
+    height:100vh;
+
+    position:fixed;
+
+    background:
+    rgba(11,26,42,0.92);
+
+    backdrop-filter:blur(12px);
+
+    padding:25px;
+
+    overflow:auto;
+
+    box-shadow:
+    5px 0 25px rgba(0,0,0,0.25);
+}
+
+.sidebar h4{
+
+    color:#d4a762;
+
+    margin-bottom:35px;
+
+    font-size:34px;
+
+    font-weight:800;
+
+    letter-spacing:1px;
+}
+
+/* MENU */
+
+.sidebar a{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    color:#d1d5db;
+
+    padding:15px 18px;
+
+    margin-bottom:14px;
+
+    border-radius:14px;
+
+    text-decoration:none;
+
+    transition:0.3s;
+
+    font-weight:600;
+
+    font-size:16px;
+}
+
+.sidebar a:hover{
+
+    background:
+    rgba(212,167,98,0.15);
+
+    color:white;
+
+    transform:translateX(4px);
+}
+
+.sidebar .active{
+
+    background:
+    linear-gradient(
+        135deg,
+        #d4a762,
+        #be904d
+    );
+
+    color:white;
+
+    box-shadow:
+    0 8px 20px rgba(212,167,98,0.35);
+}
+
+/* ===== MAIN ===== */
+
+.main{
+
+    margin-left:260px;
+
+    padding:35px;
+}
+
+/* ===== TOPBAR ===== */
+
+.topbar{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:35px;
+}
+
+.topbar h2{
+
+    font-size:52px;
+
+    font-weight:800;
+
+    color:white;
+}
+
+/* ===== ROLE BADGE ===== */
+
+.role-badge{
+
+    padding:10px 20px;
+
+    border-radius:30px;
+
+    color:white;
+
+    font-weight:700;
+
+    font-size:13px;
+
+    letter-spacing:0.5px;
+}
+
+.superadmin-badge{
+
+    background:
+    linear-gradient(
+        135deg,
+        #dc2626,
+        #991b1b
+    );
+}
+
+.admin-badge{
+
+    background:
+    linear-gradient(
+        135deg,
+        #2563eb,
+        #1d4ed8
+    );
+}
+
+/* ===== STATS CARD ===== */
+
+.card-box{
+
+    padding:30px;
+
+    border-radius:22px;
+
+    color:white;
+
+    overflow:hidden;
+
+    position:relative;
+
+    backdrop-filter:blur(10px);
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,0.25);
+
+    transition:0.3s;
+}
+
+.card-box:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:
+    0 15px 40px rgba(0,0,0,0.35);
+}
+
+.card-box h5{
+
+    font-size:22px;
+
+    margin-bottom:15px;
+
+    font-weight:600;
+}
+
+.card-box h2{
+
+    font-size:52px;
+
+    font-weight:800;
+}
+
+/* COLORS */
+
+.bg-primary{
+
+    background:
+    linear-gradient(
+        135deg,
+        #d4a762,
+        #be904d
+    ) !important;
+}
+
+.bg-success{
+
+    background:
+    linear-gradient(
+        135deg,
+        #1f8f6a,
+        #146c4f
+    ) !important;
+}
+
+.bg-dark{
+
+    background:
+    linear-gradient(
+        135deg,
+        #16202d,
+        #0b1a2a
+    ) !important;
+}
+
+/* ===== QUICK ACTION ===== */
+
+.quick-card{
+
+    background:
+    rgba(255,255,255,0.08);
+
+    backdrop-filter:blur(10px);
+
+    border-radius:22px;
+
+    padding:35px;
+
+    text-align:center;
+
+    transition:0.3s;
+
+    color:white;
+
+    box-shadow:
+    0 5px 20px rgba(0,0,0,0.15);
+}
+
+.quick-card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:
+    0 12px 30px rgba(0,0,0,0.25);
+}
+
+.quick-card i{
+
+    font-size:48px;
+
+    margin-bottom:18px;
+
+    color:#d4a762;
+}
+
+.quick-card h5{
+
+    font-weight:700;
+}
+
+/* ===== DASHBOARD CARD ===== */
+
+.dashboard-card{
+
+    border:none;
+
+    border-radius:22px;
+
+    padding:25px;
+
+    background:
+    rgba(255,255,255,0.08);
+
+    backdrop-filter:blur(10px);
+
+    color:white;
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* ===== RECENT BOOKINGS ===== */
+
+.recent-card{
+
+    border:none;
+
+    border-radius:22px;
+
+    padding:25px;
+
+    background:
+    rgba(255,255,255,0.08);
+
+    backdrop-filter:blur(10px);
+
+    color:white;
+}
+
+/* HEADER */
+
+.recent-header h5{
+
+    font-size:38px;
+
+    font-weight:800;
+
+    margin-bottom:25px;
+
+    color:white;
+}
+
+/* BOOKING ITEM */
+
+.recent-booking-item{
+
+    background:
+    rgba(255,255,255,0.08);
+
+    border-radius:18px;
+
+    padding:20px;
+
+    margin-bottom:20px;
+
+    border-left:5px solid #d4a762;
+
+    box-shadow:
+    0 5px 20px rgba(0,0,0,0.15);
+
+    transition:0.3s;
+}
+
+.recent-booking-item:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:
+    0 12px 30px rgba(0,0,0,0.25);
+}
+
+/* TOP */
+
+.recent-top{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+}
+
+/* USER */
+
+.recent-user{
+
+    font-size:22px;
+
+    font-weight:700;
+
+    color:white;
+}
+
+/* ROOM */
+
+.recent-room{
+
+    margin-top:12px;
+
+    font-size:16px;
+
+    color:#d1d5db;
+}
+
+/* DATE */
+
+.recent-date{
+
+    margin-top:12px;
+
+    font-size:14px;
+
+    color:#b8c1cc;
+}
+
+/* ===== ROLE ===== */
+
+.role-super,
+.role-admin,
+.role-user{
+
+    padding:7px 14px;
+
+    border-radius:30px;
+
+    font-size:11px;
+
+    font-weight:700;
+
+    color:white;
+}
+
+.role-super{
+
+    background:#dc2626;
+}
+
+.role-admin{
+
+    background:#2563eb;
+}
+
+.role-user{
+
+    background:#6b7280;
+}
+
+/* ===== STATUS ===== */
+
+.status-booked,
+.status-checkin,
+.status-checkout,
+.status-cancel{
+
+    padding:8px 14px;
+
+    border-radius:30px;
+
+    font-size:12px;
+
+    font-weight:700;
+
+    color:white;
+
+    display:inline-block;
+
+    letter-spacing:0.5px;
+}
+
+.status-booked{
+
+    background:#16a34a;
+}
+
+.status-checkin{
+
+    background:#2563eb;
+}
+
+.status-checkout{
+
+    background:#111827;
+}
+
+.status-cancel{
+
+    background:#dc2626;
+}
+
+/* ===== ANIMATION ===== */
+
+.fade-in{
+
+    animation:fade 0.6s ease;
+}
+
+@keyframes fade{
+
+    from{
+
+        opacity:0;
+        transform:translateY(15px);
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* ===== SCROLLBAR ===== */
+
+.sidebar::-webkit-scrollbar{
+
+    width:6px;
+}
+
+.sidebar::-webkit-scrollbar-thumb{
+
+    background:#d4a762;
+
+    border-radius:10px;
+}
+
+/* ===== MOBILE ===== */
+
+@media(max-width:768px){
+
+    .sidebar{
+
+        width:100%;
+
+        height:auto;
+
+        position:relative;
+    }
+
+    .main{
+
+        margin-left:0;
+    }
+
+    .topbar{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:15px;
+    }
+}
