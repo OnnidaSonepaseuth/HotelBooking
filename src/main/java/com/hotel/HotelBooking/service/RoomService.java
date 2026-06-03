@@ -1,20 +1,21 @@
 package com.hotel.HotelBooking.service;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.hotel.HotelBooking.entity.Room;
 import com.hotel.HotelBooking.repository.RoomRepository;
-import java.util.List;
 
 @Service
 public class RoomService {
-	
+
 	public List<Room> findAll(){
 
 	    return roomRepository.findAll();
 	}
-	
+
 
     @Autowired
     private RoomRepository roomRepository;

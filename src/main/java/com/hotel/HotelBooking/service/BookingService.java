@@ -1,12 +1,12 @@
 package com.hotel.HotelBooking.service;
 
+import java.util.Arrays;
 import java.util.List;
 
 import org.springframework.stereotype.Service;
 
 import com.hotel.HotelBooking.entity.Booking;
 import com.hotel.HotelBooking.repository.BookingRepository;
-import java.util.Arrays;
 @Service
 public class BookingService {
 
