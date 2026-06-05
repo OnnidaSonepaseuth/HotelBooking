@@ -49,6 +49,40 @@ public String users(
 
     return "users";
 }
+@PostMapping("/deleteUser")
+public String deleteUser(
+        @RequestParam Integer id,
+        HttpSession session){
+
+    if(session.getAttribute("userId") == null){
+        return "redirect:/login";
+    }
+
+    String role =
+            (String) session.getAttribute("role");
+
+    if(!"admin".equals(role)
+            && !"superadmin".equals(role)){
+        return "redirect:/users?error=access";
+    }
+
+    User user =
+            userService.findById(id);
+
+    if(user == null){
+        return "redirect:/users";
+    }
+
+    // ป้องกันลบ Super Admin
+    if("superadmin".equalsIgnoreCase(
+            user.getRole())){
+        return "redirect:/users?error=superadmin";
+    }
+
+    userService.deleteById(id);
+
+    return "redirect:/users?msg=deleted";
+}
 
 // =========================
 // OPEN ADD USER PAGE
